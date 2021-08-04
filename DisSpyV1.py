@@ -3,10 +3,19 @@ from discord.ext import commands
 import asyncio
 import os
 import datetime
+import platform
+
 capServers = False
 downloadMedia = False
 
-os.system("clear")
+#smart screen clearer
+sysOs = platform.system()
+if sysOs == "Linux":
+	os.system("clear")
+else:
+	os.system("cls")
+
+
 #print Welcome Banner
 banner = """
 \u001b[34m--------------
@@ -64,8 +73,12 @@ async def on_message(message):
 							if any(attachment.filename.lower().endswith(image)
 								for image in image_types):
 									await attachment.save(attachment.filename)
+									print(str(current_time.hour) + ":" + str(current_time.minute) + ":" + str(current_time.second) + " <\u001b[32m" + str(message.author) + "\u001b[38;5;45m/" + str(message.channel) + "> " + str(message.content))
 					pass
-				print(str(current_time.hour) + ":" + str(current_time.minute) + ":" + str(current_time.second) + " <\u001b[32m" + str(message.author) + "\u001b[38;5;45m/" + str(message.channel) + "> " + str(message.content))
+				else:
+					print(str(current_time.hour) + ":" + str(current_time.minute) + ":" + str(current_time.second) + " <\u001b[32m" + str(message.author) + "\u001b[38;5;45m/" + str(message.channel) + "> " + str(message.content))
+		else:
+			pass
 	elif message.channel.type is discord.ChannelType.group:
 			async for message in message.channel.history(limit=1):
 				if downloadMedia == True:
@@ -77,8 +90,10 @@ async def on_message(message):
 							if any(attachment.filename.lower().endswith(image)
 								for image in image_types):
 									await attachment.save(attachment.filename)
+									print(str(current_time.hour) + ":" + str(current_time.minute) + ":" + str(current_time.second) + " <\u001b[32m" + str(message.author) + "\u001b[38;5;45m/" + str(message.channel) + "> " + str(message.content))
 					pass
-				print(str(current_time.hour) + ":" + str(current_time.minute) + ":" + str(current_time.second) + " <\u001b[32m" + str(message.author) + "\u001b[38;5;45m/" + str(message.channel) + "> " + str(message.content))
+				else:
+					print(str(current_time.hour) + ":" + str(current_time.minute) + ":" + str(current_time.second) + " <\u001b[32m" + str(message.author) + "\u001b[38;5;45m/" + str(message.channel) + "> " + str(message.content))
 	elif message.channel.type is discord.ChannelType.private:
 			async for message in message.channel.history(limit=1):
 				if downloadMedia == True:
@@ -90,8 +105,10 @@ async def on_message(message):
 							if any(attachment.filename.lower().endswith(image)
 								for image in image_types):
 									await attachment.save(attachment.filename)
+									print(str(current_time.hour) + ":" + str(current_time.minute) + ":" + str(current_time.second) + " <\u001b[32m" + str(message.author) + "\u001b[38;5;45m/" + str(message.channel) + "> " + str(message.content))
 					pass
-				print(str(current_time.hour) + ":" + str(current_time.minute) + ":" + str(current_time.second) + " <\u001b[32m" + str(message.author) + "\u001b[38;5;45m/" + str(message.channel) + "> " + str(message.content))
+				else:
+					print(str(current_time.hour) + ":" + str(current_time.minute) + ":" + str(current_time.second) + " <\u001b[32m" + str(message.author) + "\u001b[38;5;45m/" + str(message.channel) + "> " + str(message.content))
 	else:
         	pass
 bot.run(token, bot=False)
