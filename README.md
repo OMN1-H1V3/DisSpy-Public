@@ -1,5 +1,5 @@
 # DisSpy-Public
-### NSA Grade Spyware for Discord
+### NSA Grade Spy tool for Discord
 
 ## What can it do? 
 It can capture all messages that the target recives including group chats and server channels. 
