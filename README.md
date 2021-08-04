@@ -3,22 +3,37 @@
 
 ## What can it do? 
 It can capture all messages that the target recives including group chats and server channels. 
-Server channel logging is disabled by default, you will need to enable it by changing ``capServers = False`` to ``capServers = True``.
-
 It can also download any media or attachments that are sent to any of the monitored text channels. 
-This is disabled by default, you will need to enable it by changing ``downloadMedia = False`` to ``downloadMedia = True`` 
+Both auto attachment downloading and server channel logging is disabled by default see **How do I use it?** for more info on how to enable these features.
 
 ## Why? 
 Because I can, and because there is a lack of spyware for discord. 
 
+## Install
+If you don't have git installed then download as a zip and extract it.
+navigate to the directory you unziped it to using the `cd <folderName>` command then run `pip3 install -r requirements.txt`
+TIP: If your on windows, open the folder then click the folder path, and type `cmd.exe`
+Afterwards run `python3 DisSpyV1.py`
+
+Alternatively you can run `git clone https://github.com/OMN1-H1V3/DisSpy-Public.git` 
+`cd DisSpy-Public` 
+`pip3 install -r requirements.txt`
+`python3 DisSpyV1.py`
+
 ## How do I use it?
-Well, you should probably learn how to use a python script, then install the imports, then once you have done that you can run it.
-Wouldn't recommend using on windows unless you change line 9 from `` os.system("clear")`` to `` os.system("cls")`` as it will throw an error because I couldn't be bothered to add a smart screen clear.
+Just run it and when prompted provide your target's token. 
+
+Server channel logging is disabled by default, you will need to enable it by changing `capServers = False` to `capServers = True` if you want to log messages sent in server channels.
+
+This is disabled by default, you will need to enable it by changing `downloadMedia = False` to `downloadMedia = True` if you want to auto-download attachments.
+
+(If you want to enable/disable server message logging or attachment downloading edit `DisSpyV1.py` first before you run it)
+
+## Bug Reports
+I'll try and matain this often but it should be basically done. If you encounter a bug just make an issue and ill check it out.
 
 ### Credits
 Started as a bug fix for [discord.spy](https://github.com/spicesouls/discord.spy), ended up fixing it and adding support for servers and group chats and file downloads.
-
-
 
 
 
