@@ -42,7 +42,9 @@ I'll try and matain this often but it should be basically done. If you encounter
 ### Credits
 Started as a bug fix for [discord.spy](https://github.com/spicesouls/discord.spy), ended up fixing it and adding support for servers and group chats and file downloads.
 
-
-
 #### I take 0 responsibility for how you use this tool. This is for educational purposes only.
 ##### This is a selfbot, which is against discords TOS, the accounts that are used within this tool are technically running a selfbot, meaning they could be banned.
+
+## Pictures
+![Image1](DisSpy1.png)
+
