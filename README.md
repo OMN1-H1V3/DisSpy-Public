@@ -47,4 +47,5 @@ Started as a bug fix for [discord.spy](https://github.com/spicesouls/discord.spy
 
 ## Pictures
 ![Image1](DisSpy1.png)
+![Image2](DisSpy2.png)
 
