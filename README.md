@@ -7,17 +7,24 @@ It can also download any media or attachments that are sent to any of the monito
 Both auto attachment downloading and server channel logging is disabled by default see **How do I use it?** for more info on how to enable these features.
 
 ## Why? 
-Because I can, and because there is a lack of spyware for discord. 
+Because I can, and because there is a lack of spy tools for discord. 
 
 ## Install
 If you don't have git installed then download as a zip and extract it.
 navigate to the directory you unziped it to using the `cd <folderName>` command then run `pip3 install -r requirements.txt`
 TIP: If your on windows, open the folder then click the folder path, and type `cmd.exe`
+
 Afterwards run `python3 DisSpyV1.py`
 
-Alternatively you can run `git clone https://github.com/OMN1-H1V3/DisSpy-Public.git` 
-`cd DisSpy-Public` 
+
+If you have **git installed** you can run:
+
+`git clone https://github.com/OMN1-H1V3/DisSpy-Public.git` 
+
+`cd DisSpy-Public`
+
 `pip3 install -r requirements.txt`
+
 `python3 DisSpyV1.py`
 
 ## How do I use it?
