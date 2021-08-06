@@ -71,7 +71,7 @@ async def on_message(message):
 						print("\u001b[33m Attachment Found! Downloading...\u001b[36m ")
 						for attachment in message.attachments:
 							if any(attachment.filename.lower().endswith(image)
-								for image in image_types:
+								for image in image_types):
 									await attachment.save(attachment.filename)
 									print(str(current_time.hour) + ":" + str(current_time.minute) + ":" + str(current_time.second) + " <\u001b[32m" + str(message.author) + "\u001b[38;5;45m/" + str(message.channel) + "> " + str(message.content))
 					pass
@@ -88,7 +88,7 @@ async def on_message(message):
 						print("\u001b[33m Attachment Found! Downloading...\u001b[36m ")
 						for attachment in message.attachments:
 							if any(attachment.filename.lower().endswith(image)
-								for image in image_types:
+								for image in image_types):
 									await attachment.save(attachment.filename)
 									print(str(current_time.hour) + ":" + str(current_time.minute) + ":" + str(current_time.second) + " <\u001b[32m" + str(message.author) + "\u001b[38;5;45m/" + str(message.channel) + "> " + str(message.content))
 					pass
@@ -103,7 +103,7 @@ async def on_message(message):
 						print("\u001b[33m Attachment Found! Downloading...\u001b[36m ")
 						for attachment in message.attachments:
 							if any(attachment.filename.lower().endswith(image)
-								for image in image_types:
+								for image in image_types):
 									await attachment.save(attachment.filename)
 									print(str(current_time.hour) + ":" + str(current_time.minute) + ":" + str(current_time.second) + " <\u001b[32m" + str(message.author) + "\u001b[38;5;45m/" + str(message.channel) + "> " + str(message.content))
 					pass
